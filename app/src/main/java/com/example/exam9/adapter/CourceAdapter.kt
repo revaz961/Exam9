@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.exam9.databinding.CourcesFragmentBinding
 import com.example.exam9.databinding.TopicLayoutBinding
 import com.example.exam9.model.Course
+import com.example.exam9.model.Education
 
 class CourceAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     companion object{
@@ -13,10 +14,9 @@ class CourceAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         const val COURSE_TYPE = 2
     }
 
-    private var cource: Course? = null
+    private var education: Education? = null
 
-    fun setCourse(course:Course){
-        this.cource = cource
+    fun setCourse(education:Education){
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
