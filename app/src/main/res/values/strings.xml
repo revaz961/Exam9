@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Exam9</string>
+    <string name="favorite">favorite</string>
+    <string name="home">home</string>
+    <string name="message">message</string>
+    <string name="cources">Cources</string>
+    <string name="what_is_it">What is it?</string>
+</resources>
