@@ -22,6 +22,7 @@ class CourcesFragment : BaseFragment<CourcesFragmentBinding, CourcesViewModel>(
     private fun init() {
         observes()
         initRecycler()
+        initBottomNavigation()
     }
 
     private fun initRecycler() {
@@ -29,6 +30,10 @@ class CourcesFragment : BaseFragment<CourcesFragmentBinding, CourcesViewModel>(
         binding.rvCources.adapter = adapter
         binding.rvCources.layoutManager = LinearLayoutManager(requireContext())
         viewModel.getEducation()
+    }
+
+    private fun initBottomNavigation(){
+        binding.botNavigation.menu.getItem(1).isChecked = true
     }
 
     private fun observes(){

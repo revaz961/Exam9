@@ -91,19 +91,22 @@ class CourceAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 tvtitle.setColor(model.color)
                 tvSubTitle.setColor(model.color, model.background_color_precent)
 
-                flPlay.setBackgroundTintColor(model.color,model.background_color_precent)
+                flPlay.setBackgroundTintColor(model.color, model.background_color_precent)
                 ivPlay.setTintColor(model.color)
 
-                progress.progress = (model.precent!!.toFloat()*100).toInt()
-                progress.setIndicatorColor(model.color,model.background_color_precent)
+                progress.progress = (model.precent!!.toFloat() * 100).toInt()
+                progress.setIndicatorColor(model.color, model.background_color_precent)
             }
 
         }
     }
 
-    inner class HeaderViewHolder(binding: TitleLayoutBinding) :
+    inner class HeaderViewHolder(private val binding: TitleLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {
+        private lateinit var model: Header
         fun bind() {
+            model = items[adapterPosition] as Header
+            binding.tvTitle.text = model.title
         }
     }
 }

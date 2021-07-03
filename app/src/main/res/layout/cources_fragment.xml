@@ -16,6 +16,7 @@
         android:padding="20dp"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/botNavigation"
         android:layout_width="match_parent"
         android:layout_height="96dp"
         android:background="@drawable/round_navigation"
