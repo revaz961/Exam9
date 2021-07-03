@@ -4,8 +4,9 @@
     android:layout_height="wrap_content"
     android:text="@string/cources"
     android:textSize="42sp"
-    android:lineHeight="49dp"
     android:textColor="@color/white"
     android:layout_marginTop="98dp"
-    android:layout_marginStart="31dp">
+    android:layout_marginBottom="20dp"
+    android:textStyle="bold"
+    >
 </TextView>

@@ -12,13 +12,15 @@
         android:id="@+id/rvCources"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:padding="20dp"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="96dp"
         android:background="@drawable/round_navigation"
-        app:itemIconTint="#96A7AF"
+        app:itemIconTint="@drawable/menu_item_color"
+        app:itemBackground="@drawable/menu_item_background"
         app:labelVisibilityMode="unlabeled"
         app:menu="@menu/bot_nav_menu" />
 
